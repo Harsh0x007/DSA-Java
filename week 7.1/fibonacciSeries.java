@@ -1,4 +1,4 @@
-public class fibonacci {
+public class fibonacciSeries {
 
     public static void printFib(int a, int b, int n) {
         if(n == 0) {
@@ -13,8 +13,7 @@ public class fibonacci {
         int b = 1;
         System.out.print(a + " ");
         System.out.print(b + " ");
-        int c = a + b;
-        int n = 7;
+        int n = 3;
         printFib(a,b,n-2);
     }
 }

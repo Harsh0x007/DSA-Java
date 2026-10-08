@@ -10,6 +10,18 @@ function containDup(nums) {
     return false;
 }
 
+function rmvDuplicatesBrute() {
+    const set = new Set();
+    let arr = [1, 1, 2, 2, 2, 3, 3, 3];
+    for(let i = 0; i< arr.length; i++) {
+        set.add(arr[i]); // O(nlogn)
+    }
+    console.log(set.size);
+    set.forEach(element => {
+        console.log(element) //O(n)
+    });
+}
+
 
 // 169. Majortiy Element
 
@@ -74,4 +86,5 @@ function prodArrayRemvSelf(nums) {
     }
     return result;
 }
-console.log(prodArrayRemvSelf([1, 2, 0, 4]));
+// console.log(prodArrayRemvSelf([1, 2, 0, 4]));
+rmvDuplicates();

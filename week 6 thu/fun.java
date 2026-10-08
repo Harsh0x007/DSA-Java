@@ -9,5 +9,6 @@ public class fun {
         Scanner sc = new Scanner(System.in);
         String name = sc.next();
         printMyName(name);
+        sc.close();
     }
 }

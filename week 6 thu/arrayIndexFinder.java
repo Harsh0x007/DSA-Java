@@ -19,5 +19,6 @@ public class arrayIndexFinder {
                 System.out.print("Index of " + numbers[i] + " is " + i);
             }
         }
+        sc.close();
     }
 }

@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class quickSort {
 
-    public static void quickSort(int arr[], int start, int end) {
+    public static void quickSortNorm(int arr[], int start, int end) {
         Stack<Integer> stack = new Stack<>();
         stack.push(start);
         stack.push(end);

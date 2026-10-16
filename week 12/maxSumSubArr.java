@@ -6,7 +6,8 @@ public class maxSumSubArr {
         int end = 0;
         int tempStart = 0;
         for(int i = 0; i < nums.length; i++) {
-            if(nums[i] > currSum + nums[i]) {
+            currSum = currSum + nums[i];
+            if(nums[i] > currSum) {
                 currSum = nums[i];
                 tempStart = i;
             } else {

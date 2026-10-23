@@ -1,10 +1,7 @@
 public class LL {
 
     Node head;
-    private int size;
-
     LL() {
-        this.size = 0;
     }
 
     class Node {
@@ -14,7 +11,6 @@ public class LL {
         Node(int data) {
             this.data = data;
             this.next = null;
-            size++;
         }
     }
 
@@ -49,7 +45,6 @@ public class LL {
         if( head == null) {
             return;
         }
-        size--;
         head = head.next;
     }
 
